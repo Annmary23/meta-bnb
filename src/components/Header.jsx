@@ -20,7 +20,7 @@ export default function Header(props) {
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8 ">
+          <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8 mt-10">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -75,7 +75,7 @@ export default function Header(props) {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="sm:hidden md:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3 text-center">
               {navigation.map((item) => (
                 <Disclosure.Button

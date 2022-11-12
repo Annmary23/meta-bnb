@@ -12,37 +12,82 @@ import nft2 from '../assets/nft2.png'
 import nft3 from '../assets/nft3.png'
 import group from '../assets/group.png'
 import { FaStar } from "react-icons/fa";
+import Footer from '../components/Footer'
 
 function Home() {
     const [rate, setRate] = useState(5);
+
+    const cards = [
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+        {
+            image: image1,
+            title: 'desert king',
+            distance: '2345km away',
+            fee: '1MBT per night',
+            avai: 'available for 2weeks stay'
+        },
+    ]
   return (
 
     <>
-    <div className='md:mt-[56px] mb-[20px] lg:mt-[125px] md:mb-[67px] lg:mb-[67px] p-4 max-w-7xl mx-auto lg:flex md:flex'>
+    <div className='md:mt-[56px] mb-[20px] lg:mt-[125px] md:mb-[67px] lg:mb-[67px] p-10 max-w-7xl mx-auto lg:flex md:flex'>
     
-        <div className='text-justify md:text-left lg:text-left mt-[40px] lg:mt-px md:mt-px'>
-            <span className='text-[36px] md:text-[36px] lg:text-[56px] md:mt-[70px] lg:mt-[70px] mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'>Rent a Place away from Home in the Metaverse</span>
+        <div className='p-10 pl-0 text-justify md:text-left lg:text-left mt-[40px] lg:mt-px md:mt-px'>
+            <span className='text-[36px] md:text-[36px] lg:text-[56px]  mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'>Rent a Place away from Home in the Metaverse</span>
             <span className='text-[24px] mb-[28px] block max-w-[636px]'>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</span>
         </div>
         
         <div className='  lg:ml-[99px] md:ml-[9px] '>
         <div className="flex lg:flex md:flex gap-2">
-          <div className="mt-24 flex flex-col gap-2">
-            <figure className="lg:h-[176px] lg:w-[234px] overflow-hidden rounded-[15px]">
-              <img src={image2} alt="" aria-hidden="true" />
-            </figure>
-            <figure className="lg:h-[176px] lg:w-[234px] overflow-hidden rounded-[15px]">
-              <img src={image2} alt="" aria-hidden="true" />
-            </figure>
-          </div>
-          <div className="flex flex-col gap-2">
-            <figure className="lg:h-[176px] lg:w-[234px] overflow-hidden rounded-[15px]">
-              <img src={image2} alt="" aria-hidden="true" />
-            </figure>
-            <figure className="lg:h-[176px] lg:w-[234px] overflow-hidden rounded-[15px]">
-              <img src={image2} alt="" aria-hidden="true" />
-            </figure>
-          </div>
+          <img src={group} />
         </div>
         </div>
         <div>
@@ -59,12 +104,16 @@ function Home() {
             Inspiration for your next adventure
             </span>
             </div>
-            <Card>
-            <StyledImg src={image1} />
+            <div className='w-full grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-4'>
+            {
+                cards.map((item) =>{
+                    return (
+                        <Card className='w-max lg:w-max md:w-[400px] m-2'>
+            <StyledImg src={item.image} className='w-max md:w-[400px]'/>
             <CardContainer className='flex space-x-10 mt-4'>
                 <CardItem1 className='flex flex-column space-y-3'>
-                    <p>Desert King</p>
-                    <p>2345km away</p>
+                    <p>{item.title}</p>
+                    <p>{item.distance}</p>
                     <Container>
                     {[...Array(5)].map((item, index) => {
                         const givenRating = index + 1;
@@ -89,32 +138,36 @@ function Home() {
                         </label>
                         );
                     })}
+                    
                 </Container>
                 </CardItem1>
                 <CardItem2 className='flex flex-column space-y-3'>
-                    <p><b>1MBT per night</b></p>
-                    <p>available for 2weeks stay</p>
+                    <p><b>{item.fee}</b></p>
+                    <p>{item.avai}</p>
                     
                 </CardItem2>
                 
             </CardContainer>
             </Card>
+                    )
+                })}
+                </div>
         </div>
         <Section className=''>
-        <div className='h-[774px]  flex p-4 max-w-7xl mx-auto'>
+        <div className='h-max-content md:flex lg:flex p-10 max-w-7xl mx-auto'>
         <div className='text-justify m-auto max-w-[400px] md:text-left lg:text-left   text-white'>
             <span className='text-[36px] md:text-[36px] lg:text-[48px] md:mt-[70px] lg:mt-[70px] mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'>Metabnb NFTs</span>
             <span className='text-[18px] mb-[28px] block max-w-[636px]'>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</span>
         </div>
-        <div className='relative w-[100%] h-[574.85px] lg:ml-[99px] md:ml-[9px]'>
-            <img src={nft1} className='absolute left-[323.45px] top-[0px]'/>
-            <img src={nft2} className='absolute left-[291.53px] top-[323.93px]'/>
-            <img src={nft3} className='absolute left-[0px] top-[333.13px]'/>
+        <div className='relative w-[100%] lg:h-[574.85px] lg:ml-[99px] md:ml-[29px]'>
+            <img src={nft1} className=''/>
             
             
         </div>
         </div>
         </Section>
+
+        <Footer />
     </>
   )
 }
@@ -179,7 +232,6 @@ const Card = styled.div`
     border: 1px solid #D7D7D7;
     border-radius: 15px;
     padding: 16px;
-    width:max-content;
 `
 const CardItem1 = styled.div`
     flex-direction: column;
