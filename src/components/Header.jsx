@@ -20,7 +20,7 @@ export default function Header(props) {
     <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -53,8 +53,8 @@ export default function Header(props) {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-purple-500 ' : 'text-gray-300 hover:text-purple-500',
-                          'px-3 py-2 rounded-md text-sm font-light ease-out duration-300'
+                          item.current ? 'text-purple-500  ' : 'text-gray-300 hover:text-purple-500',
+                          'px-3 py-2 rounded-md text-sm font-light ease-out duration-300 text-xl'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -76,7 +76,7 @@ export default function Header(props) {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
+            <div className="space-y-1 px-2 pt-2 pb-3 text-center">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -104,9 +104,9 @@ export default function Header(props) {
         </>
       )}
     </Disclosure>
-      <div className='min-h-screen p-4 max-w-7xl mx-auto'>
+      
         {props.children}
-      </div>
+     
     </>
   )
 }
