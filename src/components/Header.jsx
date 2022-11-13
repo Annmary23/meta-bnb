@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/metabnb.svg'
 import './header.css'
+import MetaModal from './Modal'
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'Place to Stay', href: '#', current: false },
@@ -65,12 +66,7 @@ export default function Header(props) {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button
-                  type="button"
-                  className="hidden lg:block connect-button rounded-lg py-2 px-4 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-white"
-                >
-                  <span className="">Connect Wallet</span>
-                </button>
+              <MetaModal />
               </div>
             </div>
           </div>
@@ -93,12 +89,7 @@ export default function Header(props) {
                 </Disclosure.Button>
               ))
               }
-              <button
-                  type="button"
-                  className="connect-button rounded-lg py-2 px-4 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-white"
-                >
-                  <span className="">Connect Wallet</span>
-                </button>
+              <MetaModal />
             </div>
           </Disclosure.Panel>
         </>
