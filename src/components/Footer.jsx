@@ -30,15 +30,15 @@ function Footer() {
                       aria-controls="panel1a-content"
                       id="panel1a-header"
                     >
-                      <span className='font-bold text-white text-[18px]'>Community</span>
+                      <a href='#' className='font-bold text-white text-[18px]'>Community</a>
                     </StyledAccordionSummary>
                     <AccordionDetails>
                       <Typography>
                       <div className='text-white flex flex-col justify-between pb-[30px]'>
-                          <span className='font-bol text-white text-[14px]'>NFT</span>
-                          <span className='font-bol text-white text-[14px]'>Tokens</span>
-                          <span className='font-bol text-white text-[14px]'>Landlords</span>
-                          <span className='font-bol text-white text-[14px]'>Discord</span>
+                          <a href='#' className='font-bol text-white text-[14px]'>NFT</a>
+                          <a href='#' className='font-bol text-white text-[14px]'>Tokens</a>
+                          <a href='#' className='font-bol text-white text-[14px]'>Landlords</a>
+                          <a href='#' className='font-bol text-white text-[14px]'>Discord</a>
                         </div>
                       </Typography>
                     </AccordionDetails>
@@ -51,15 +51,15 @@ function Footer() {
                       aria-controls="panel1a-content"
                       id="panel1a-header"
                     >
-                      <span className='font-bold text-white text-[18px]'>Places</span>
+                      <a href='#' className='font-bold text-white text-[18px]'>Places</a>
                     </StyledAccordionSummary>
                     <AccordionDetails>
                       <Typography>
                       <div className='text-white flex flex-col justify-between pb-[30px]'>
-                          <span className='font-bol text-white text-[14px]'>Castle</span>
-                          <span className='font-bol text-white text-[14px]'>Farms</span>
-                          <span className='font-bol text-white text-[14px]'>Beach</span>
-                          <span className='font-bol text-white text-[14px]'>Learn more</span>
+                          <a href='#' className='font-bol text-white text-[14px]'>Castle</a>
+                          <a href='#' className='font-bol text-white text-[14px]'>Farms</a>
+                          <a href='#' className='font-bol text-white text-[14px]'>Beach</a>
+                          <a href='#' className='font-bol text-white text-[14px]'>Learn more</a>
                         </div>
                       </Typography>
                     </AccordionDetails>
@@ -72,43 +72,43 @@ function Footer() {
                       aria-controls="panel1a-content"
                       id="panel1a-header"
                     >
-                      <span className='font-bold text-white text-[18px]'>About us</span>
+                      <a href='#' className='font-bold text-white text-[18px]'>About us</a>
                     </StyledAccordionSummary>
                     <AccordionDetails>
                       <Typography>
                       <div className='text-white flex flex-col justify-between pb-[30px]'>
-                              <span className='font-bol text-white text-[14px]'>Road map</span>
-                              <span className='font-bol text-white text-[14px]'>Creators</span>
-                              <span className='font-bol text-white text-[14px]'>Career</span>
-                              <span className='font-bol text-white text-[14px]'>Contact us</span>
+                              <a href='#' className='font-bol text-white text-[14px]'>Road map</a>
+                              <a href='#' className='font-bol text-white text-[14px]'>Creators</a>
+                              <a href='#' className='font-bol text-white text-[14px]'>Career</a>
+                              <a href='#' className='font-bol text-white text-[14px]'>Contact us</a>
                         </div>
                       </Typography>
                     </AccordionDetails>
                   </StyledAccordion>
                   </div>
                   </div>
-                <span className='text-white'>&copy; 2022 Metabnb</span>
+                <a href='#' className='text-white'>&copy; 2022 Metabnb</a>
                 </div>
                 <div className='text-white flex flex-col justify-between pb-[30px] hidden lg:flex md:flex'>
-                  <span className='font-bold text-white text-[18px]'>Community</span>
-                  <span className='font-bol text-white text-[14px]'>NFT</span>
-                  <span className='font-bol text-white text-[14px]'>Tokens</span>
-                  <span className='font-bol text-white text-[14px]'>Landlords</span>
-                  <span className='font-bol text-white text-[14px]'>Discord</span>
+                  <a href='#' className='font-bold text-white text-[18px]'>Community</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>NFT</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Tokens</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Landlords</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Discord</a>
                 </div>
                 <div className='text-white flex flex-col justify-between pb-[30px] hidden lg:flex md:flex'>
-                  <span className='font-bold text-white text-[18px]'>Places</span>
-                  <span className='font-bol text-white text-[14px]'>Castle</span>
-                  <span className='font-bol text-white text-[14px]'>Farms</span>
-                  <span className='font-bol text-white text-[14px]'>Beach</span>
-                  <span className='font-bol text-white text-[14px]'>Learn more</span>
+                  <a href='#' className='font-bold text-white text-[18px]'>Places</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Castle</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Farms</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Beach</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Learn more</a>
                 </div>
                 <div className='text-white flex flex-col justify-between pb-[30px] hidden lg:flex md:flex'>
-                  <span className='font-bold text-white text-[18px]'>About us</span>
-                  <span className='font-bol text-white text-[14px]'>Road map</span>
-                  <span className='font-bol text-white text-[14px]'>Creators</span>
-                  <span className='font-bol text-white text-[14px]'>Career</span>
-                  <span className='font-bol text-white text-[14px]'>Contact us</span>
+                  <a href='#' className='font-bold text-white text-[18px]'>About us</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Road map</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Creators</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Career</a>
+                  <a href='#' className='font-bol text-white text-[14px]'>Contact us</a>
                 </div>
                 </div>
             </div>

@@ -4,10 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/metabnb.svg'
 import './header.css'
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Place to Stay', href: '#', current: false },
+  { name: 'NFTs', href: '#', current: false },
+  { name: 'Community', href: '#', current: false },
 ]
 
 function classNames(...classes) {
