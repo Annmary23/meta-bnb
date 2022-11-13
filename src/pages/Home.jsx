@@ -78,15 +78,15 @@ function Home() {
   return (
 
     <>
-    <div className='md:mt-[56px] mb-[20px] lg:mt-[125px] md:mb-[67px] lg:mb-[67px] p-10 max-w-7xl mx-auto lg:flex md:flex'>
+    <div className='md:mt-[56px] mb-[20px] lg:mt-[125px] md:mb-[67px] lg:mb-[67px] p-10 max-w-7xl mx-auto flex items-center flex-col lg:flex-row md:flex-col lg:flex md:flex'>
     
-        <div className='p-10 pl-0 text-justify md:text-left lg:text-left mt-[40px] lg:mt-px md:mt-px'>
+        <div className='md:p-10 lg:p-10 pl-0 text-justify md:text-left lg:text-left mt-[40px] lg:mt-px md:mt-px'>
             <span className='text-[36px] md:text-[36px] lg:text-[56px]  mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'>Rent a Place away from Home in the Metaverse</span>
             <span className='text-[24px] mb-[28px] block max-w-[636px]'>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</span>
         </div>
         
         <div className='  lg:ml-[99px] md:ml-[9px] '>
-        <div className="flex lg:flex md:flex gap-2">
+        <div className="">
           <img src={group} />
         </div>
         </div>
@@ -98,18 +98,19 @@ function Home() {
             <img src={company2} className='p-2'/>
             <img src={company3} className='p-2'/>
         </Section>
-        <div className=' flex items-center flex-col content-between justify-evenly text-center p-4 max-w-7xl mx-auto '>
+        <div className=' flex items-center flex-col content-between justify-evenly text-center p-4 max-w-7xl mx-auto flex items-center flex-col lg:flex-col md:flex-col '>
             <div className='mt-[14px] mb-[23px]'>
             <span className='text-[36px] md:text-[36px] lg:text-[56px] mb-[20px]'>
             Inspiration for your next adventure
             </span>
             </div>
-            <div className='w-full grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-4'>
+            <div className='flex flex-wrap justify-center'>
             {
                 cards.map((item) =>{
                     return (
-                        <Card className='w-max lg:w-max md:w-[400px] m-2'>
-            <StyledImg src={item.image} className='w-max md:w-[400px]'/>
+                        <div className='p-2 max-w-[100%] lg:max-w-[25%] md:max-w-[50%]'>
+                        <Card className='max-w-full lg:max-w-full'>
+            <StyledImg src={item.image} className='w-full '/>
             <CardContainer className='flex space-x-10 mt-4'>
                 <CardItem1 className='flex flex-column space-y-3'>
                     <p>{item.title}</p>
@@ -149,6 +150,7 @@ function Home() {
                 
             </CardContainer>
             </Card>
+            </div>
                     )
                 })}
                 </div>
