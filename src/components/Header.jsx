@@ -1,5 +1,5 @@
 
-import logo from '../assets/metabnb.svg'
+import logo from '../assets/icons/metabnb.svg'
 import './header.css'
 import MetaModal from './Modal'
 import { Link } from 'react-router-dom'
@@ -13,8 +13,6 @@ const menu = document.querySelector(".mobile-menu");
 btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });}
-  
-  
   return (
     <>
     <nav class="p-4 max-w-7xl mx-auto ">

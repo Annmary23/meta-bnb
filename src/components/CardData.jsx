@@ -1,11 +1,11 @@
-import image0 from '../assets/image0.png'
-import image1 from '../assets/image1.png'
-import image2 from '../assets/image2.png'
-import image3 from '../assets/image3.png'
-import image4 from '../assets/image4.png'
-import image5 from '../assets/image5.png'
-import image6 from '../assets/image6.png'
-import image7 from '../assets/image7.png'
+import image0 from '../assets/images/image0.png'
+import image1 from '../assets/images/image1.png'
+import image2 from '../assets/images/image2.png'
+import image3 from '../assets/images/image3.png'
+import image4 from '../assets/images/image4.png'
+import image5 from '../assets/images/image5.png'
+import image6 from '../assets/images/image6.png'
+import image7 from '../assets/images/image7.png'
 
 export const cards = [
     {

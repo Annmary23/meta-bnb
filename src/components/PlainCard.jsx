@@ -13,7 +13,7 @@ function PlainCard(props) {
                     <div className='relative'>
             <StyledImg src={props.image} className='w-full rounded-lg h-[256px]'/>
                 <Like>
-                    <Checkbox icon={<LikeIcon />} checkedIcon={<FavoriteIcon />} />
+                    <Checkbox icon={<LikeIcon />} checkedIcon={<StyledFavoriteIcon />} />
                 </Like>
           </div>
     <CardContainer className='flex space-x-5 mt-4'>
@@ -106,3 +106,6 @@ const Like = styled('div')({
     right: 8,
   });
   
+const StyledFavoriteIcon = styled(FavoriteIcon)`
+    color:#A02279 !important;
+`

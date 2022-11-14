@@ -11,13 +11,13 @@ function Home() {
   return (
 
     <>
-    <div className='md:mt-[56px] mb-[20px] lg:mt-[125px] md:mb-[67px] lg:mb-[67px] p-10 max-w-7xl mx-auto flex items-center flex-col lg:flex-row md:flex-col lg:flex md:flex'>
+    <div className='md:mt-[56px] mb-[20px] lg:mt-[15px] md:mb-[67px] lg:mb-[67px] p-10 max-w-7xl mx-auto flex items-center flex-col lg:flex-row md:flex-col lg:flex md:flex'>
     
         <div className='md:p-10 lg:p-10 pl-0 text-justify md:text-left lg:text-left mt-[40px] lg:mt-px md:mt-px'>
             <span className='text-[36px] md:text-[36px] lg:text-[50px]  mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'style={{color:'#434343'}}>Rent a <StyledText>Place</StyledText> away from <StyledText>Home</StyledText> in the <StyledText>Metaverse</StyledText></span>
             <span className='text-[24px] mb-[28px] block max-w-[636px]' style={{color:'#434343'}}>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</span>
             <div className='lg:flex lg:flex-row md:flex-row py-4 md:flex'>
-                <StyledInput className='w-full lg:w-[390px] md:w-full'/>
+                <StyledInput placeholder='Search for Location'className='w-full lg:w-[390px] md:w-full'/>
                 <StyledButton className='w-full rounded-r-lg my-4 lg:w-[172px] lg:m-0 md:m-0 md:w-[172px]'>Search</StyledButton>
             </div>
         </div>
@@ -39,7 +39,7 @@ function Home() {
         <Section className='' id='nft' >
         <div className='h-max-content md:flex lg:flex p-10 max-w-7xl mx-auto'>
         <div className='text-justify m-auto max-w-[400px] md:text-left lg:text-left   text-white'>
-            <span className='text-[36px] md:text-[36px] lg:text-[48px] md:mt-[70px] lg:mt-[70px] mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'>Metabnb NFTs</span>
+            <span className='text-[36px] md:text-[36px] lg:text-[48px] md:mt-[70px] lg:mt-[70px] mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px] '>Metabnb NFTs</span>
             <span className='text-[18px] mb-[28px] block max-w-[636px]'>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</span>
             <button className='bg-white rounded-lg px-[33px] py-[14px] ' style={{color:'#A02279'}}>
                 Learn more
