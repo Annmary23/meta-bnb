@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 import heart from '../assets/heart.svg'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Checkbox, Typography } from '@mui/material';
+import { LikeIcon } from '../assets/icons';
 
 function PlainCard(props) {
     const [rate, setRate] = useState(5);
@@ -13,7 +14,7 @@ function PlainCard(props) {
                     <div className='relative'>
             <StyledImg src={props.image} className='w-full rounded-lg h-[256px]'/>
                 <Like>
-                    <Checkbox icon={<img src={heart} />} checkedIcon={<FavoriteIcon />} />
+                    <Checkbox icon={<LikeIcon />} checkedIcon={<FavoriteIcon />} />
                 </Like>
           </div>
     <CardContainer className='flex space-x-5 mt-4'>

@@ -3,11 +3,9 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import closeIcon from '../assets/close-icon.svg'
 import moreIcon from '../assets/more-icon.svg'
 import metamaskIcon from '../assets/metamask-icon.svg'
+import { CloseIcon, MoreIcon } from '../assets/icons';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -50,7 +48,7 @@ export default function MetaModal() {
                 <button
                     className='hover:bg-slate-100 ease-in duration-200 p-2 '
                     onClick={handleClose}
-                ><img src={closeIcon} /></button>
+                ><CloseIcon /></button>
                 
             </div>
             <hr />
@@ -66,7 +64,7 @@ export default function MetaModal() {
                     <div className='flex items-center'>
                         <img src={metamaskIcon}/>
                         <span className='ml-[16px]'>Metamask</span></div>
-                    <img src={moreIcon} />
+                    <MoreIcon />
                 </div>
             </div>
           </Box>

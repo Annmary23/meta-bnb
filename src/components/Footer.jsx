@@ -1,14 +1,10 @@
 import React from 'react'
-import logo from '../assets/metabnb-light.svg'
-import facebook from '../assets/facebook-icon.svg'
-import instagram from '../assets/instagram-icon.svg'
-import twitter from '../assets/twitter-icon.svg'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import styled from 'styled-components'
+import { FacebookIcon, InstagramIcon, MetabnbLight, TwitterIcon } from '../assets/icons'
 
 function Footer() {
   return (
@@ -16,11 +12,13 @@ function Footer() {
         <div style={{backgroundColor:'#1D1D1E'}}>
             <div className='max-w-7xl mx-auto py-[37px] flex justify-between items-center flex-col md:flex-row lg:flex-row p-10'>
                 <div className='w-[190px]'>
-                <img src={logo}  className='mb-[30px] lg:mb-[96px] md:mb-[96px]'/>
+                  <div className='mb-[30px] lg:mb-[96px] md:mb-[96px]'>
+                <MetabnbLight />
+                </div>
                 <div className=' justify-around space-x-10 w-full flex lg:space-x-10 md:space-x-10 mb-[30px] lg:mb-[55px] md:mb-[55px]'>
-                    <img src={facebook} />
-                    <img src={instagram} />
-                    <img src={twitter} />
+                    <FacebookIcon />
+                    <InstagramIcon />
+                    <TwitterIcon />
                 </div>
                 <div className='mb-[30px]'>
                 <div className='block lg:hidden md:hidden'>

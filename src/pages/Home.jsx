@@ -1,18 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-
-import image2 from '../assets/image2.png'
-import image3 from '../assets/image3.png'
-import image4 from '../assets/image4.png'
-import company1 from '../assets/company1.svg'
-import company2 from '../assets/company2.svg'
-import company3 from '../assets/company3.svg'
+import { MBToken, MetaMask, OpenSea } from '../assets/icons'
 import nft1 from '../assets/nft1.png'
-import nft2 from '../assets/nft2.png'
-import nft3 from '../assets/nft3.png'
 import group from '../assets/group.png'
-
-import Footer from '../components/Footer'
 import NftCard from '../components/Card'
 function Home() {
     
@@ -41,9 +31,9 @@ function Home() {
         </div>
         </div>
         <Section className='flex justify-evenly p-[13px] flex-wrap'>
-            <img src={company1} className='p-2'/>
-            <img src={company2} className='p-2'/>
-            <img src={company3} className='p-2'/>
+            <OpenSea className='p-2'/>
+            <MetaMask className='p-2'/>
+            <MBToken className='p-2'/>
         </Section>
        <NftCard />
         <Section className='' id='nft' >

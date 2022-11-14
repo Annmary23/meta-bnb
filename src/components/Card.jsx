@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 
 import { cards } from './CardData'
 import PlainCard from './plainCard';
-import { ListItemSecondaryAction } from '@mui/material';
 
 function NftCard() {
     
