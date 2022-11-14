@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { MBToken, MetaMask, OpenSea } from '../assets/icons/icons'
 import nft1 from '../assets/images/nft1.png'
-import group from '../assets/images/group.png'
+import group from '../assets/images/Group.png'
 import NftCard from '../components/Card'
 function Home() {
     
