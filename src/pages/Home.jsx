@@ -26,9 +26,13 @@ function Home() {
         <div className='md:p-10 lg:p-10 pl-0 text-justify md:text-left lg:text-left mt-[40px] lg:mt-px md:mt-px'>
             <span className='text-[36px] md:text-[36px] lg:text-[50px]  mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'style={{color:'#434343'}}>Rent a <StyledText>Place</StyledText> away from <StyledText>Home</StyledText> in the <StyledText>Metaverse</StyledText></span>
             <span className='text-[24px] mb-[28px] block max-w-[636px]' style={{color:'#434343'}}>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</span>
+            <div className='lg:flex lg:flex-row md:flex-row py-4 md:flex'>
+                <StyledInput className='w-full lg:w-[390px] md:w-full'/>
+                <StyledButton className='w-full rounded-r-lg my-4 lg:w-[172px] lg:m-0 md:m-0 md:w-[172px]'>Search</StyledButton>
+            </div>
         </div>
         
-        <div className='  lg:ml-[99px] md:ml-[9px] '>
+        <div className='lg:ml-[99px] md:ml-[9px]'>
         <div className="">
           <img src={group} />
         </div>
@@ -112,4 +116,18 @@ const StyledImages = styled.div`
 
 const Section = styled.div`
     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+`
+
+const StyledInput = styled.input`
+    padding: 15px;
+    border: 1px solid #A3A3A3;
+border-radius: 8px 0px 0px 8px;
+outline: none;
+`
+const StyledButton = styled.button`
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+    /* border-radius: 0px 8px 8px 0px; */
+    padding: 16px;
+    color: #fff;
+
 `

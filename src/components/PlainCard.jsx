@@ -1,15 +1,23 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { FaStar } from "react-icons/fa";
+import heart from '../assets/heart.svg'
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import { Checkbox, Typography } from '@mui/material';
 
 function PlainCard(props) {
     const [rate, setRate] = useState(5);
   return (
     <div className='p-2 max-w-[100%] lg:max-w-[25%] md:max-w-[50%]'>
                 <Card className='max-w-full lg:max-w-full h-[372px]'>
-    <StyledImg src={props.image} className='w-full rounded-lg h-[256px]'/>
-    <CardContainer className='flex space-x-10 mt-4'>
-        <CardItem1 className='flex flex-column space-y-3'>
+                    <div className='relative'>
+            <StyledImg src={props.image} className='w-full rounded-lg h-[256px]'/>
+                <Like>
+                    <Checkbox icon={<img src={heart} />} checkedIcon={<FavoriteIcon />} />
+                </Like>
+          </div>
+    <CardContainer className='flex space-x-5 mt-4'>
+        <CardItem1 className='flex flex-column space-y-2'>
             <p className='w-max'>{props.title}</p>
             <p className='w-max'>{props.distance}</p>
             <Container>
@@ -39,7 +47,7 @@ function PlainCard(props) {
             
         </Container>
         </CardItem1>
-        <CardItem2 className='flex flex-column space-y-3'>
+        <CardItem2 className='flex flex-column space-y-2'>
             <p className='w-max'><b>{props.fee}</b></p>
             <p className='w-max'>{props.avai}</p>
             
@@ -61,12 +69,12 @@ const Card = styled.div`
 const CardItem1 = styled.div`
     flex-direction: column;
     align-items: flex-start;
-    font-size: 12px;
+    font-size: 10px;
 `
 const CardItem2 = styled.div`
     flex-direction: column;
     align-items: flex-end;
-    font-size: 12px;
+    font-size: 10px;
 `
 const CardContainer = styled.div`
     justify-content: space-between;
@@ -92,8 +100,9 @@ const StyledImg = styled.img`
     /* position: absolute; */
 `
 
-const like = styled.div`
-    position: 'absolute';
-    top: 8;
-    right: 8;
-`
+const Like = styled('div')({
+    position: 'absolute',
+    top: 8,
+    right: 8,
+  });
+  
