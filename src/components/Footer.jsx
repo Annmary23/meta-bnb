@@ -13,7 +13,7 @@ import styled from 'styled-components'
 function Footer() {
   return (
     <>
-        <div className='bg-black'>
+        <div style={{backgroundColor:'#1D1D1E'}}>
             <div className='max-w-7xl mx-auto py-[37px] flex justify-between items-center flex-col md:flex-row lg:flex-row p-10'>
                 <div className='w-[190px]'>
                 <img src={logo}  className='mb-[30px] lg:mb-[96px] md:mb-[96px]'/>

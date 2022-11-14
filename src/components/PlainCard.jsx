@@ -6,12 +6,12 @@ function PlainCard(props) {
     const [rate, setRate] = useState(5);
   return (
     <div className='p-2 max-w-[100%] lg:max-w-[25%] md:max-w-[50%]'>
-                <Card className='max-w-full lg:max-w-full'>
-    <StyledImg src={props.image} className='w-full '/>
+                <Card className='max-w-full lg:max-w-full h-[372px]'>
+    <StyledImg src={props.image} className='w-full rounded-lg h-[256px]'/>
     <CardContainer className='flex space-x-10 mt-4'>
         <CardItem1 className='flex flex-column space-y-3'>
-            <p>{props.title}</p>
-            <p>{props.distance}</p>
+            <p className='w-max'>{props.title}</p>
+            <p className='w-max'>{props.distance}</p>
             <Container>
             {[...Array(5)].map((item, index) => {
                 const givenRating = index + 1;
@@ -40,8 +40,8 @@ function PlainCard(props) {
         </Container>
         </CardItem1>
         <CardItem2 className='flex flex-column space-y-3'>
-            <p><b>{props.fee}</b></p>
-            <p>{props.avai}</p>
+            <p className='w-max'><b>{props.fee}</b></p>
+            <p className='w-max'>{props.avai}</p>
             
         </CardItem2>
         
