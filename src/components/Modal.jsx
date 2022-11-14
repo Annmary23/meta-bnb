@@ -13,7 +13,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 600,
+  width: '70%',
   background: '#FFFFFF',
   borderRadius: '16px',
   boxShadow: 4,
@@ -29,7 +29,7 @@ export default function MetaModal() {
       <button
       onClick={handleOpen}
                   type="button"
-                  className="hidden lg:block connect-button rounded-lg py-2 px-4 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-white"
+                  className=" md:block lg:block connect-button rounded-lg py-2 px-4 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-white"
                 >
                   <span className="">Connect Wallet</span>
                 </button>

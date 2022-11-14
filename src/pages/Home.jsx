@@ -155,7 +155,7 @@ function Home() {
                 })}
                 </div>
         </div>
-        <Section className=''>
+        <Section className='' id='nft'>
         <div className='h-max-content md:flex lg:flex p-10 max-w-7xl mx-auto'>
         <div className='text-justify m-auto max-w-[400px] md:text-left lg:text-left   text-white'>
             <span className='text-[36px] md:text-[36px] lg:text-[48px] md:mt-[70px] lg:mt-[70px] mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'>Metabnb NFTs</span>
