@@ -98,7 +98,7 @@ function Home() {
             <img src={company2} className='p-2'/>
             <img src={company3} className='p-2'/>
         </Section>
-        <div className=' flex items-center flex-col content-between justify-evenly text-center p-4 max-w-7xl mx-auto flex items-center flex-col lg:flex-col md:flex-col '>
+        <div id='comm' className=' flex items-center flex-col content-between justify-evenly text-center p-4 max-w-7xl mx-auto flex items-center flex-col lg:flex-col md:flex-col' >
             <div className='mt-[14px] mb-[23px]'>
             <span className='text-[36px] md:text-[36px] lg:text-[56px] mb-[20px]'>
             Inspiration for your next adventure

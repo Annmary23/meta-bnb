@@ -80,10 +80,21 @@ btn.addEventListener("click", () => {
             e.preventDefault();  // Stop Page Reloading
             nft && nft.scrollIntoView();
             }}
+            className='py-3 px-3 text-gray-700 hover:text-gray-900'
             >
-            Hero
+            NFTs
             </a>
-          <Link to="/" class="py-3 px-3 text-gray-700 hover:text-gray-900">Community</Link>
+            <a
+            href="/"
+            onClick={e => {
+            let comm = document.getElementById("comm");
+            e.preventDefault();  // Stop Page Reloading
+            comm && comm.scrollIntoView();
+            }}
+            className='py-3 px-3 text-gray-700 hover:text-gray-900'
+            >
+            Community
+            </a>
           <div className='block md:hidden'>
           <MetaModal className='md:hidden'/>
           </div>
