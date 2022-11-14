@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import image1 from '../assets/Frame.png'
+
 import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
 import image4 from '../assets/image4.png'
@@ -11,70 +11,13 @@ import nft1 from '../assets/nft1.png'
 import nft2 from '../assets/nft2.png'
 import nft3 from '../assets/nft3.png'
 import group from '../assets/group.png'
-import { FaStar } from "react-icons/fa";
+
 import Footer from '../components/Footer'
-
+import NftCard from '../components/Card'
 function Home() {
-    const [rate, setRate] = useState(5);
+    
 
-    const cards = [
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-        {
-            image: image1,
-            title: 'desert king',
-            distance: '2345km away',
-            fee: '1MBT per night',
-            avai: 'available for 2weeks stay'
-        },
-    ]
+    
   return (
 
     <>
@@ -98,63 +41,7 @@ function Home() {
             <img src={company2} className='p-2'/>
             <img src={company3} className='p-2'/>
         </Section>
-        <div id='comm' className=' flex items-center flex-col content-between justify-evenly text-center p-4 max-w-7xl mx-auto flex items-center flex-col lg:flex-col md:flex-col' >
-            <div className='mt-[14px] mb-[23px]'>
-            <span className='text-[36px] md:text-[36px] lg:text-[56px] mb-[20px]'>
-            Inspiration for your next adventure
-            </span>
-            </div>
-            <div className='flex flex-wrap justify-center'>
-            {
-                cards.map((item) =>{
-                    return (
-                        <div className='p-2 max-w-[100%] lg:max-w-[25%] md:max-w-[50%]'>
-                        <Card className='max-w-full lg:max-w-full'>
-            <StyledImg src={item.image} className='w-full '/>
-            <CardContainer className='flex space-x-10 mt-4'>
-                <CardItem1 className='flex flex-column space-y-3'>
-                    <p>{item.title}</p>
-                    <p>{item.distance}</p>
-                    <Container>
-                    {[...Array(5)].map((item, index) => {
-                        const givenRating = index + 1;
-                        return (
-                        <label>
-                            <Radio
-                            type="radio"
-                            value={givenRating}
-                            onClick={() => {
-                                setRate(givenRating);
-                            }}
-                            />
-                            <Rating>
-                            <StyledFaStar
-                                color={
-                                givenRating < rate || givenRating === rate
-                                    ? "A02279"
-                                    : "rgb(192,192,192)"
-                                }
-                            />
-                            </Rating>
-                        </label>
-                        );
-                    })}
-                    
-                </Container>
-                </CardItem1>
-                <CardItem2 className='flex flex-column space-y-3'>
-                    <p><b>{item.fee}</b></p>
-                    <p>{item.avai}</p>
-                    
-                </CardItem2>
-                
-            </CardContainer>
-            </Card>
-            </div>
-                    )
-                })}
-                </div>
-        </div>
+       <NftCard />
         <Section className='' id='nft'>
         <div className='h-max-content md:flex lg:flex p-10 max-w-7xl mx-auto'>
         <div className='text-justify m-auto max-w-[400px] md:text-left lg:text-left   text-white'>
@@ -168,8 +55,6 @@ function Home() {
         </div>
         </div>
         </Section>
-
-        <Footer />
     </>
   )
 }
@@ -223,45 +108,8 @@ const StyledImages = styled.div`
     /* height: 700px; */
     margin-left: 109px;
 `
-const StyledImg = styled.img`
-    /* position: absolute; */
-`
+
 
 const Section = styled.div`
     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
-`
-const Card = styled.div`
-    border: 1px solid #D7D7D7;
-    border-radius: 15px;
-    padding: 16px;
-`
-const CardItem1 = styled.div`
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 12px;
-`
-const CardItem2 = styled.div`
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 12px;
-`
-const CardContainer = styled.div`
-    justify-content: space-between;
-`
-const Container = styled.div`
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   max-height: 12px;
-   font-size: 60px;
-`
-const Radio = styled.input`
-   display: none;
-`
-const Rating = styled.div`
-   cursor: pointer;
-`
-const StyledFaStar = styled(FaStar)`
-    height: 12px;
-    width: 12px;
 `

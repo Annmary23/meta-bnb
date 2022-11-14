@@ -33,14 +33,12 @@ function Footer() {
                       <a href='#' className='font-bold text-white text-[18px]'>Community</a>
                     </StyledAccordionSummary>
                     <AccordionDetails>
-                      <Typography>
                       <div className='text-white flex flex-col justify-between pb-[30px]'>
                           <a href='#' className='font-bol text-white text-[14px]'>NFT</a>
                           <a href='#' className='font-bol text-white text-[14px]'>Tokens</a>
                           <a href='#' className='font-bol text-white text-[14px]'>Landlords</a>
                           <a href='#' className='font-bol text-white text-[14px]'>Discord</a>
                         </div>
-                      </Typography>
                     </AccordionDetails>
                   </StyledAccordion>
                   </div>
@@ -54,14 +52,12 @@ function Footer() {
                       <a href='#' className='font-bold text-white text-[18px]'>Places</a>
                     </StyledAccordionSummary>
                     <AccordionDetails>
-                      <Typography>
                       <div className='text-white flex flex-col justify-between pb-[30px]'>
                           <a href='#' className='font-bol text-white text-[14px]'>Castle</a>
                           <a href='#' className='font-bol text-white text-[14px]'>Farms</a>
                           <a href='#' className='font-bol text-white text-[14px]'>Beach</a>
                           <a href='#' className='font-bol text-white text-[14px]'>Learn more</a>
                         </div>
-                      </Typography>
                     </AccordionDetails>
                   </StyledAccordion>
                   </div>
@@ -75,14 +71,12 @@ function Footer() {
                       <a href='#' className='font-bold text-white text-[18px]'>About us</a>
                     </StyledAccordionSummary>
                     <AccordionDetails>
-                      <Typography>
                       <div className='text-white flex flex-col justify-between pb-[30px]'>
                               <a href='#' className='font-bol text-white text-[14px]'>Road map</a>
                               <a href='#' className='font-bol text-white text-[14px]'>Creators</a>
                               <a href='#' className='font-bol text-white text-[14px]'>Career</a>
                               <a href='#' className='font-bol text-white text-[14px]'>Contact us</a>
                         </div>
-                      </Typography>
                     </AccordionDetails>
                   </StyledAccordion>
                   </div>

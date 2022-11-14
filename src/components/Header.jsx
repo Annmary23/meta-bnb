@@ -50,10 +50,31 @@ btn.addEventListener("click", () => {
         </div>
 
         <div class="hidden md:hidden lg:flex  items-center space-x-1 text-[20px]">
-          <Link to="/" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</Link>
-          <Link to="/" class="py-5 px-3 text-gray-700 hover:text-gray-900">Place to Stay</Link>
-          <Link to="/" class="py-5 px-3 text-gray-700 hover:text-gray-900">NFTs</Link>
-          <Link to="/" class="py-5 px-3 text-gray-700 hover:text-gray-900">Community</Link>
+        <Link to="/" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</Link>
+        <Link to="/place-to-stay" class="py-5 px-3 text-gray-700 hover:text-gray-900">Place to Stay</Link>
+          <Link to='/'><a
+            // href="/"
+            // onClick={e => {
+            // let nft = document.getElementById("nft");
+            // e.preventDefault();  // Stop Page Reloading
+            // nft && nft.scrollIntoView();
+            // }}
+            className='py-5 px-3 text-gray-700 hover:text-gray-900'
+            >
+            NFTs
+            </a>
+            </Link>
+            <a
+            href="/"
+            onClick={e => {
+            let comm = document.getElementById("comm");
+            e.preventDefault();  // Stop Page Reloading
+            comm && comm.scrollIntoView();
+            }}
+            className='py-5 px-3 text-gray-700 hover:text-gray-900'
+            >
+            Community
+            </a>
         </div>
       </div>
       <div className='hidden lg:block md:block'>
@@ -72,7 +93,7 @@ btn.addEventListener("click", () => {
   </div>
   <div class="mobile-menu hidden flex flex-col lg:hidden  ">
           <Link to="/" class="py-3 px-3 text-gray-700 hover:text-gray-900">Home</Link>
-          <Link to="/" class="py-3 px-3 text-gray-700 hover:text-gray-900">Place to Stay</Link>
+          <Link to="/place-to-stay" class="py-3 px-3 text-gray-700 hover:text-gray-900">Place to Stay</Link>
           <a
             href="/"
             onClick={e => {
