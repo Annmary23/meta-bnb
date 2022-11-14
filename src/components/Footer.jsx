@@ -114,8 +114,9 @@ export default Footer
 
 const StyledAccordion = styled(Accordion)`
   color: white !important;
-  background-color: black !important;
+  background-color: #1D1D1E!important;
   width: auto !important;
+  box-shadow: none !important;
 `
 
 const StyledExpandMoreIcon = styled(ExpandMoreIcon)`
