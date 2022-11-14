@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { cards } from './CardData'
-import PlainCard from './plainCard';
+import PlainCard from './PlainCard';
 
 function NftCard() {
     
