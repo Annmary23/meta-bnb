@@ -91,3 +91,9 @@ const StyledFaStar = styled(FaStar)`
 const StyledImg = styled.img`
     /* position: absolute; */
 `
+
+const like = styled.div`
+    position: 'absolute';
+    top: 8;
+    right: 8;
+`
