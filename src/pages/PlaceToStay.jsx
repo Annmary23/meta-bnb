@@ -1,5 +1,5 @@
 import React from 'react'
-import PlainCard from '../components/plainCard'
+import PlainCard from '../components/PlainCard'
 import {cards} from '../components/PlacetoStayData'
 import styled from 'styled-components'
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material'
