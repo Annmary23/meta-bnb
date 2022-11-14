@@ -51,6 +51,9 @@ function Home() {
         <div className='text-justify m-auto max-w-[400px] md:text-left lg:text-left   text-white'>
             <span className='text-[36px] md:text-[36px] lg:text-[48px] md:mt-[70px] lg:mt-[70px] mb-[24px] md:mb-[48px] lg:mb-[48px] block md:max-w-[649px] lg:max-w-[649px]'>Metabnb NFTs</span>
             <span className='text-[18px] mb-[28px] block max-w-[636px]'>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</span>
+            <button className='bg-white rounded-lg px-[33px] py-[14px] ' style={{color:'#A02279'}}>
+                Learn more
+            </button>
         </div>
         <div className='relative w-[100%] lg:h-[574.85px] lg:ml-[99px] md:ml-[29px]'>
             <img src={nft1} className=''/>

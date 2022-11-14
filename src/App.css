@@ -1,8 +1,9 @@
-
-
 #root {
   margin: 0 auto;
   /* padding: 2rem; */
   font-family:'Red Rose', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }

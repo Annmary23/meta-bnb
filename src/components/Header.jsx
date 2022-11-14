@@ -53,12 +53,12 @@ btn.addEventListener("click", () => {
         <Link to="/" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</Link>
         <Link to="/place-to-stay" class="py-5 px-3 text-gray-700 hover:text-gray-900">Place to Stay</Link>
           <Link to='/'><a
-            // href="/"
-            // onClick={e => {
-            // let nft = document.getElementById("nft");
-            // e.preventDefault();  // Stop Page Reloading
-            // nft && nft.scrollIntoView();
-            // }}
+            href="/"
+            onClick={e => {
+            let nft = document.getElementById("nft");
+            e.preventDefault();  // Stop Page Reloading
+            nft && nft.scrollIntoView();
+            }}
             className='py-5 px-3 text-gray-700 hover:text-gray-900'
             >
             NFTs
