@@ -1,32 +1,11 @@
-import { Fragment, useEffect } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
 import logo from '../assets/metabnb.svg'
 import './header.css'
 import MetaModal from './Modal'
 import { Link } from 'react-router-dom'
-const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Place to Stay', href: '#', current: false },
-  { name: 'NFTs', href: '#', current: false },
-  { name: 'Community', href: '#', current: false },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-
 
 
 export default function Header(props) {
-  function Menu(e){
-    let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-  }
-  // grab everything we need
-
-// add event listeners
 window.onload = function(){
 const btn = document.querySelector("button.mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
