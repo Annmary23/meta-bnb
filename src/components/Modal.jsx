@@ -3,9 +3,8 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import moreIcon from '../assets/more-icon.svg'
 import metamaskIcon from '../assets/metamask-icon.svg'
-import { CloseIcon, MoreIcon } from '../assets/icons';
+import { CloseIcon, MoreIcon } from '../assets/icons/icons';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -58,7 +57,7 @@ export default function MetaModal() {
                     <div className='flex items-center'>
                         <img src={metamaskIcon}/>
                         <span className='ml-[16px]'>Metamask</span></div>
-                    <img src={moreIcon} />
+                    <MoreIcon />
                 </div>
                 <div className='flex justify-between hover:bg-slate-100 ease-in duration-200 rounded-[12px] border-[1px] p-[12px] my-[16px] px-[17px]'>
                     <div className='flex items-center'>

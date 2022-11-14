@@ -4,7 +4,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import styled from 'styled-components'
-import { FacebookIcon, InstagramIcon, MetabnbLight, TwitterIcon } from '../assets/icons'
+import { FacebookIcon, InstagramIcon, MetabnbLight, TwitterIcon } from '../assets/icons/icons'
 
 function Footer() {
   return (

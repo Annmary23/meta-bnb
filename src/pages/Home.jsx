@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import { MBToken, MetaMask, OpenSea } from '../assets/icons'
-import nft1 from '../assets/nft1.png'
-import group from '../assets/group.png'
+import { MBToken, MetaMask, OpenSea } from '../assets/icons/icons'
+import nft1 from '../assets/images/nft1.png'
+import group from '../assets/images/group.png'
 import NftCard from '../components/Card'
 function Home() {
     

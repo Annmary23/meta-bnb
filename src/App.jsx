@@ -14,7 +14,7 @@ function App() {
         <Header>
           <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='place-to-stay' element={<PlaceToStay />}/>
+            <Route path='/place-to-stay' element={<PlaceToStay />}/>
           </Routes>
         </Header>
       </Router>

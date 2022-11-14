@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-
-
 import { cards } from './CardData'
 import PlainCard from './plainCard';
 

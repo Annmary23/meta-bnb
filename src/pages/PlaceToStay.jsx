@@ -1,12 +1,10 @@
 import React from 'react'
-import NftCard from '../components/Card'
 import PlainCard from '../components/plainCard'
 import {cards} from '../components/PlacetoStayData'
-import filter from '../assets/settings.svg'
 import styled from 'styled-components'
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material'
 import ShowMore from 'react-show-more-button';
-import { SettingsIcon } from '../assets/icons'
+import { SettingsIcon } from '../assets/icons/icons'
 
 function PlaceToStay() {
   return (

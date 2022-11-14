@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { FaStar } from "react-icons/fa";
-import heart from '../assets/heart.svg'
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { Checkbox, Typography } from '@mui/material';
-import { LikeIcon } from '../assets/icons';
+import { Checkbox } from '@mui/material';
+import { LikeIcon } from '../assets/icons/icons';
 
 function PlainCard(props) {
     const [rate, setRate] = useState(5);
